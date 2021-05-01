@@ -68,7 +68,7 @@ uint16_t scrollPause = 2000; // in milliseconds
 // Global message buffers shared by Serial and Scrolling functions
 #define  BUF_SIZE  75
 char curMessage[BUF_SIZE] = { "" };
-char newMessage[BUF_SIZE] = { "Hello" };
+char newMessage[BUF_SIZE] = { "" };
 bool newMessageAvailable = true;
 
 #if USE_UI_CONTROL
