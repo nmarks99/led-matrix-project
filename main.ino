@@ -63,7 +63,7 @@ const uint8_t SPEED_DEADBAND = 5;
 uint8_t scrollSpeed = 45;    // default frame delay value
 textEffect_t scrollEffect = PA_SCROLL_LEFT;
 textPosition_t scrollAlign = PA_LEFT;
-uint16_t scrollPause = 2000; // in milliseconds
+uint16_t scrollPause = 0; // in milliseconds
 
 // Global message buffers shared by Serial and Scrolling functions
 #define  BUF_SIZE  75
