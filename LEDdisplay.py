@@ -9,15 +9,15 @@ root.title('LED Matrix Display')
 root.iconbitmap(r'C:\Users\nmark\Documents\GitHub\led-matrix-project\pyapp_icon.ico') 
 root.geometry('400x150')
     
-def get_msg(msg):
+def get_msg():
     msg = e.get()
-    return msg
-    # e.delete(0,'end')
-    # S = serial.Serial('COM8',57600)
-    # time.sleep(5)   # Wait for serial to open/arduino to reset
-    # S.write(msg.encode('utf-8'))
-    # time.sleep(1)
-    # S.close()
+    e.delete(0,'end')
+    
+    S = serial.Serial('COM8',57600)
+    time.sleep(2)   # Wait for serial to open/arduino to reset
+    S.write(msg.encode('utf-8'))
+    time.sleep(1)
+    S.close()
     
     # msg = e.get()
     # myLabel = tkinter.Label(root,text=msg)
