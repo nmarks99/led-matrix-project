@@ -60,7 +60,7 @@ const uint8_t INVERT_SET = 9;     // change the invert
 const uint8_t SPEED_DEADBAND = 5;
 #endif // USE_UI_CONTROL
 
-uint8_t scrollSpeed = 45;    // default frame delay value
+uint8_t scrollSpeed = 40;    // default frame delay value
 textEffect_t scrollEffect = PA_SCROLL_LEFT;
 textPosition_t scrollAlign = PA_LEFT;
 uint16_t scrollPause = 0; // in milliseconds
