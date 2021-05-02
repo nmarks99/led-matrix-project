@@ -1,17 +1,5 @@
-// Use the Parola library to scroll text on the display
-//
-// Demonstrates the use of the scrolling function to display text received
-// from the serial interface
-//
-// User can enter text on the serial monitor and this will display as a
-// scrolling message on the display.
-// Speed for the display is controlled by a pot on SPEED_IN analog in.
-// Scrolling direction is controlled by a switch on DIRECTION_SET digital in.
-// Invert ON/OFF is set by a switch on INVERT_SET digital in.
-//
 // UISwitch library can be found at https://github.com/MajicDesigns/MD_UISwitch
 // MD_MAX72XX library can be found at https://github.com/MajicDesigns/MD_MAX72XX
-//
 
 #include <MD_Parola.h>
 #include <MD_MAX72xx.h>
@@ -38,8 +26,6 @@
 #endif
 
 // Define the number of devices we have in the chain and the hardware interface
-// NOTE: These pin numbers will probably not work with your hardware and may
-// need to be adapted
 #define HARDWARE_TYPE MD_MAX72XX::FC16_HW
 #define MAX_DEVICES 4
 #define CLK_PIN   13
@@ -130,7 +116,7 @@ void readSerial(void)
 void setup()
 {
   Serial.begin(57600);
-  Serial.print("\n[Parola Scrolling Display]\nType a message for the scrolling display\nEnd message line with a newline");
+  // Serial.print("\n[Parola Scrolling Display]\nType a message for the scrolling display\nEnd message line with a newline");
 
 #if USE_UI_CONTROL
   uiDirection.begin();
