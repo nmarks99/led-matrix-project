@@ -2,6 +2,6 @@
     "port": "COM8",
     "configuration": "cpu=atmega328",
     "board": "arduino:avr:nano",
-    "sketch": "main.ino",
+    "sketch": "main\\main.ino",
     "output": "../build"
 }
