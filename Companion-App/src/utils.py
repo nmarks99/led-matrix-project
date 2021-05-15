@@ -1,6 +1,10 @@
 import serial.tools.list_ports  
 
 def find_serial_port():
+    '''
+    Returns a string corresponding to the serial port of the Arduino nano board.
+    If the board is not found, return False
+    '''
     myport = False 
     ports = list(serial.tools.list_ports.comports())
     for p in ports:
