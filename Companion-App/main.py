@@ -12,6 +12,10 @@ except:
     time.sleep(2)
     exit()
 
+print('==================')
+print('LED MATRIX DISPLAY')
+print('==================')
+
 while True:
     msg = input('Enter a message: ')
     if msg == 'q':

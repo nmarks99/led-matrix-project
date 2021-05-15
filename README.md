@@ -2,4 +2,4 @@
 Baud rate = 57600
 
 ## Run this line to compile executable using pystaller:  
-pyinstaller.exe --onefile --icon=pyapp_icon.ico --windowed LEDdisplay.py
+pyinstaller.exe --onefile --icon=pyapp_icon.ico --windowed main.py
